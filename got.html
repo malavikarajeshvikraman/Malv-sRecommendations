@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Malavika's Recommendation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/general.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Game of Thrones</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#projects">Recommendations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead" style="background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url('https://cdn2.tstatic.net/wow/foto/bank/images/game-of-thronesgame-of-thronesmm.jpg'); 
+  background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;">
+        <div class="container d-flex h-100 align-items-center">
+          <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Game of Thrones</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Nine noble families wage war against each other in order to gain control over the mythical land of Westeros. Meanwhile, a force is rising after millenniums and threatens the existence of living men.</h2>
+            <a href="#about" class="btn btn-primary js-scroll-trigger">My Ratings</a>
+            <a href="#season" class="btn btn-primary js-scroll-trigger">Seasons</a>
+            <a href="#cast" class="btn btn-primary js-scroll-trigger">Cast</a>
+          </div>
+        </div>
+      </header>
+    
+      <section id="about" class="about-section text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">Game of Thrones -A visual treat </h2>
+                <p class="text-white-50">THE most epic TV series of all time! There is a reason GoT has the most Emmy awards of any TV show ever created. HBO has wisely spared no expense in order to bring a cinematic experience to the TV screen - every episode is like watching a mini-movie, with all the bells and whistles you'd expect from a cinema-grade movie, and MORE. They have taken George R.R. Martin's story of medieval fantasy and made it a reality for the viewer - something never done before with this genre. It's like Lord of the Rings, The 300, Clash of the Titans, Conan the Barbarian, and any other epic-type of film in this genre family all rolled into one. If you liked even one of those films, you're going to love Game of Thrones. (You'll see actors from some of those films, too - Sean Bean, Lena Heady, Liam Cunningham - to name a few.)</p>
+                <h3 class="text-white-50">My Ratings:</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked "></span>
+                <span class="fa fa-star "></span>
+                </div>
+                <div class="container middle">
+                  <div class="row" style="margin-top:40px; margin-left:40px; ">
+                    <div class="col-md-6">
+                      <div class="well well-sm">
+                            <div class="text-center">
+                                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box" >Leave a Review</a>
+                            </div>
+                        
+                            <div class="row" id="post-review-box" style="display:none;">
+                                <div class="col-md-12 typical" >
+                                    <form accept-charset="UTF-8" action="" method="post">
+                                        <input id="ratings-hidden" name="rating" type="hidden"> 
+                                        <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+                        
+                                        <div class="text-right">
+                                            <div class="stars starrr" data-rating="0"></div>
+                                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+                                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+                                            <button class="btn btn-success btn-lg" type="submit">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> 
+                         
+                    </div>
+                  </div>
+                </div>
+        </section >
+        <script>
+(function(e){var t,o={className:"autosizejs",append:"",callback:!1,resizeDelay:10},i='<textarea tabindex="-1" style="position:absolute; top:-999px; left:0; right:auto; bottom:auto; border:0; padding: 0; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; word-wrap:break-word; height:0 !important; min-height:0 !important; overflow:hidden; transition:none; -webkit-transition:none; -moz-transition:none;"/>',n=["fontFamily","fontSize","fontWeight","fontStyle","letterSpacing","textTransform","wordSpacing","textIndent"],s=e(i).data("autosize",!0)[0];s.style.lineHeight="99px","99px"===e(s).css("lineHeight")&&n.push("lineHeight"),s.style.lineHeight="",e.fn.autosize=function(i){return this.length?(i=e.extend({},o,i||{}),s.parentNode!==document.body&&e(document.body).append(s),this.each(function(){function o(){var t,o;"getComputedStyle"in window?(t=window.getComputedStyle(u,null),o=u.getBoundingClientRect().width,e.each(["paddingLeft","paddingRight","borderLeftWidth","borderRightWidth"],function(e,i){o-=parseInt(t[i],10)}),s.style.width=o+"px"):s.style.width=Math.max(p.width(),0)+"px"}function a(){var a={};if(t=u,s.className=i.className,d=parseInt(p.css("maxHeight"),10),e.each(n,function(e,t){a[t]=p.css(t)}),e(s).css(a),o(),window.chrome){var r=u.style.width;u.style.width="0px",u.offsetWidth,u.style.width=r}}function r(){var e,n;t!==u?a():o(),s.value=u.value+i.append,s.style.overflowY=u.style.overflowY,n=parseInt(u.style.height,10),s.scrollTop=0,s.scrollTop=9e4,e=s.scrollTop,d&&e>d?(u.style.overflowY="scroll",e=d):(u.style.overflowY="hidden",c>e&&(e=c)),e+=w,n!==e&&(u.style.height=e+"px",f&&i.callback.call(u,u))}function l(){clearTimeout(h),h=setTimeout(function(){var e=p.width();e!==g&&(g=e,r())},parseInt(i.resizeDelay,10))}var d,c,h,u=this,p=e(u),w=0,f=e.isFunction(i.callback),z={height:u.style.height,overflow:u.style.overflow,overflowY:u.style.overflowY,wordWrap:u.style.wordWrap,resize:u.style.resize},g=p.width();p.data("autosize")||(p.data("autosize",!0),("border-box"===p.css("box-sizing")||"border-box"===p.css("-moz-box-sizing")||"border-box"===p.css("-webkit-box-sizing"))&&(w=p.outerHeight()-p.height()),c=Math.max(parseInt(p.css("minHeight"),10)-w||0,p.height()),p.css({overflow:"hidden",overflowY:"hidden",wordWrap:"break-word",resize:"none"===p.css("resize")||"vertical"===p.css("resize")?"none":"horizontal"}),"onpropertychange"in u?"oninput"in u?p.on("input.autosize keyup.autosize",r):p.on("propertychange.autosize",function(){"value"===event.propertyName&&r()}):p.on("input.autosize",r),i.resizeDelay!==!1&&e(window).on("resize.autosize",l),p.on("autosize.resize",r),p.on("autosize.resizeIncludeStyle",function(){t=null,r()}),p.on("autosize.destroy",function(){t=null,clearTimeout(h),e(window).off("resize",l),p.off("autosize").off(".autosize").css(z).removeData("autosize")}),r())})):this}})(window.jQuery||window.$);
+
+var __slice=[].slice;(function(e,t){var n;n=function(){function t(t,n){var r,i,s,o=this;this.options=e.extend({},this.defaults,n);this.$el=t;s=this.defaults;for(r in s){i=s[r];if(this.$el.data(r)!=null){this.options[r]=this.$el.data(r)}}this.createStars();this.syncRating();this.$el.on("mouseover.starrr","span",function(e){return o.syncRating(o.$el.find("span").index(e.currentTarget)+1)});this.$el.on("mouseout.starrr",function(){return o.syncRating()});this.$el.on("click.starrr","span",function(e){return o.setRating(o.$el.find("span").index(e.currentTarget)+1)});this.$el.on("starrr:change",this.options.change)}t.prototype.defaults={rating:void 0,numStars:5,change:function(e,t){}};t.prototype.createStars=function(){var e,t,n;n=[];for(e=1,t=this.options.numStars;1<=t?e<=t:e>=t;1<=t?e++:e--){n.push(this.$el.append("<span class='glyphicon .glyphicon-star-empty'></span>"))}return n};t.prototype.setRating=function(e){if(this.options.rating===e){e=void 0}this.options.rating=e;this.syncRating();return this.$el.trigger("starrr:change",e)};t.prototype.syncRating=function(e){var t,n,r,i;e||(e=this.options.rating);if(e){for(t=n=0,i=e-1;0<=i?n<=i:n>=i;t=0<=i?++n:--n){this.$el.find("span").eq(t).removeClass("glyphicon-star-empty").addClass("glyphicon-star")}}if(e&&e<5){for(t=r=e;e<=4?r<=4:r>=4;t=e<=4?++r:--r){this.$el.find("span").eq(t).removeClass("glyphicon-star").addClass("glyphicon-star-empty")}}if(!e){return this.$el.find("span").removeClass("glyphicon-star").addClass("glyphicon-star-empty")}};return t}();return e.fn.extend({starrr:function(){var t,r;r=arguments[0],t=2<=arguments.length?__slice.call(arguments,1):[];return this.each(function(){var i;i=e(this).data("star-rating");if(!i){e(this).data("star-rating",i=new n(e(this),r))}if(typeof r==="string"){return i[r].apply(i,t)}})}})})(window.jQuery,window);$(function(){return $(".starrr").starrr()})
+
+$(function(){
+
+  $('#new-review').autosize({append: "\n"});
+
+  var reviewBox = $('#post-review-box');
+  var newReview = $('#new-review');
+  var openReviewBtn = $('#open-review-box');
+  var closeReviewBtn = $('#close-review-box');
+  var ratingsField = $('#ratings-hidden');
+
+  openReviewBtn.click(function(e)
+  {
+    reviewBox.slideDown(400, function()
+      {
+        $('#new-review').trigger('autosize.resize');
+        newReview.focus();
+      });
+    openReviewBtn.fadeOut(100);
+    closeReviewBtn.show();
+  });
+
+  closeReviewBtn.click(function(e)
+  {
+    e.preventDefault();
+    reviewBox.slideUp(300, function()
+      {
+        newReview.focus();
+        openReviewBtn.fadeIn(200);
+      });
+    closeReviewBtn.hide();
+    
+  });
+
+  $('.starrr').on('starrr:change', function(e, value){
+    ratingsField.val(value);
+  });
+});
+ 
+function ext(){
+ {
+    if(confirm('Going to external site')==false){ 
+        //this prevents the anchor tag from going to the href link
+        this.event.preventDefault();
+    }
+    else{ 
+        // do as per default behaviour of anchor tag... 
+    }
+}
+}
+        </script>
+        <section id ="season">
+        <div class="container">
+
+          <!-- Page Heading -->
+          <h1 class="my-4">Seasons:
+          </h1>
+        
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href=https://watchgameofthrones.tv/seasons/game-of-thrones-season-1/" onclick="ext()"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Game_of_Thrones_Season_1.jpg/220px-Game_of_Thrones_Season_1.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-1/" onclick="ext()">Season 1</a>
+                  </h4>
+                  <p class="card-text">TThe first season of the fantasy drama television series Game of Thrones premiered on HBO on April 17, 2011 in the U.S. and concluded on June 19, 2011. It consists of ten episodes, each of approximately 55 minutes. The series is based on A Game of Thrones, the first novel in the A Song of Ice and Fire series by George R. R. Martin, adapted for television by David Benioff and D. B. Weiss. HBO had ordered a television pilot in November 2008; filming began the following year. However, it was deemed unsatisfactory and later reshot with some roles recast. In March 2010, HBO ordered the first season, which began filming in July 2010, primarily in Belfast, Northern Ireland, with additional filming in Malta.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                  <button><a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-1/" onclick="ext()">Watch</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-2/" onclick="ext()"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Game_of_Thrones_Season_2.jpg/220px-Game_of_Thrones_Season_2.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-2/" onclick="ext()">Season 2</a>
+                  </h4>
+                  <p class="card-text">The second season of the fantasy drama television series Game of Thrones premiered in the United States on HBO on April 1, 2012, and concluded on June 3, 2012. It was broadcast on Sunday at 9:00 pm in the United States, consisting of 10 episodes, each running approximately 50–60 minutes. The season mostly covers the events of A Clash of Kings, the second novel of the A Song of Ice and Fire series by George R. R. Martin, adapted for television by David Benioff and D. B. Weiss. HBO ordered the second season on April 19, 2011, which began filming in July 2011, primarily in Ireland, Northern Ireland, Croatia and Iceland.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                 <button><a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-2/" onclick="ext()">Watch</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-3/" onclick="ext()"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Game_of_Thrones_Season_3.jpg/220px-Game_of_Thrones_Season_3.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-3/ onclick="ext()">Season 3</a>
+                  </h4>
+                  <p class="card-text">The third season of the fantasy drama television series Game of Thrones premiered in the United States on HBO on March 31, 2013, and concluded on June 9, 2013. It was broadcast on Sunday at 9:00 pm in the United States, consisting of 10 episodes, each running approximately 50–60 minutes.[1] The season is based roughly on the first half of A Storm of Swords (the third of the A Song of Ice and Fire novels by George R. R. Martin, of which the series is an adaptation).[2] The series is adapted for television by David Benioff and D. B. Weiss. HBO renewed the series for a third season on April 10, 2012, nine days after the second season's premiere. Production began in July 2012.[3] The show was filmed primarily in Ireland, Northern Ireland, Croatia, Iceland and Morocco.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                  <button><a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-3/"onclick="ext()">Watch</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-4/"onclick="ext()"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Game_of_Thrones_Season_4.jpg/220px-Game_of_Thrones_Season_4.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-4/"onclick="ext()">Season 4</a>
+                  </h4>
+                  <p class="card-text">The fourth season of the fantasy drama television series Game of Thrones premiered in the United States on HBO on April 6, 2014, and concluded on June 15, 2014. It was broadcast on Sunday at 9:00 pm in the United States, consisting of 10 episodes, each running approximately 50–60 minutes.[1] The season is adapted primarily from the second half of A Storm of Swords, along with elements of A Feast for Crows and A Dance with Dragons, all novels from the A Song of Ice and Fire series by George R. R. Martin.[2] The series is adapted for television by David Benioff and D. B. Weiss. HBO ordered the fourth season on April 2, 2013, which began filming in July 2013. The season was filmed primarily in Ireland, Northern Ireland and Croatia.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                 <button><a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-4/"onclick="ext()">Watch</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="ttps://watchgameofthrones.tv/seasons/game-of-thrones-season-5/"onclick="ext( )"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Game_of_Thrones_Season_5.png/220px-Game_of_Thrones_Season_5.png" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="ttps://watchgameofthrones.tv/seasons/game-of-thrones-season-5/"onclick="ext()">Season 5</a>
+                  </h4>
+                  <p class="card-text">The fifth season of the fantasy drama television series Game of Thrones premiered on HBO on April 12, and concluded on June 14, 2015.[1] It was broadcast on Sunday at 9:00 pm in the United States, consisting of 10 episodes, each running approximately 50–60 minutes. The season primarily adapts material from A Feast for Crows and A Dance with Dragons, the fourth and fifth novels in George R. R. Martin's A Song of Ice and Fire series, though it also uses elements from the third novel, A Storm of Swords, as well as the upcoming sixth novel The Winds of Winter.[2][3][4] It also contains original content not found in Martin's novels.[5] The series is adapted for television by David Benioff and D. B. Weiss.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                  <button><a href="ttps://watchgameofthrones.tv/seasons/game-of-thrones-season-5/"onclick="ext()">Watch</a></button>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="ttps://watchgameofthrones.tv/seasons/game-of-thrones-season-6/"onclick="ext()"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Game_of_Thrones_Season_6.jpeg/220px-Game_of_Thrones_Season_6.jpeg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="ttps://watchgameofthrones.tv/seasons/game-of-thrones-season-6/"onclick="ext()">Season 6</a>
+                  </h4>
+                  <p class="card-text">he sixth season of the fantasy drama television series Game of Thrones premiered on HBO on April 24, 2016, and concluded on June 26, 2016. It consists of ten episodes, each of approximately 50–60 minutes long, largely of original content not found in George R. R. Martin's A Song of Ice and Fire series. Some story elements were derived from the novels and from information Martin revealed to the show-runners.[1] The series was adapted for television by David Benioff and D. B. Weiss. HBO ordered the season on April 8, 2014, together with the fifth season, which began filming in July 2015[2][3] primarily in Northern Ireland, Spain, Croatia, Iceland and Canada. The entire season cost over $100 million to produce.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                  <button><a href="ttps://watchgameofthrones.tv/seasons/game-of-thrones-season-6/"onclick="ext()">Watch</a></button>
+                </div>
+
+              </div>
+            </div>
+          
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Game_of_Thrones_Season_7.png/220px-Game_of_Thrones_Season_7.png" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-7/"onclick="ext()">Season 7</a>
+                  </h4>
+                  <p class="card-text">The seventh and penultimate season of the fantasy drama television series Game of Thrones premiered on HBO on July 16, 2017, and concluded on August 27, 2017.[1][2][3] Unlike previous seasons, which consisted of ten episodes each, the seventh season consisted of only seven episodes.[4] Like the previous season, it largely consisted of original content not found in George R. R. Martin's A Song of Ice and Fire series, while also incorporating material that Martin revealed to showrunners about the upcoming novels in the series.[5][better source needed] The series was adapted for television by David Benioff and D. B. Weiss.</p>
+                  <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                  <button><a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-7/"onclick="ext()">Watch</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                  <a href="#"><img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Game_of_Thrones_Season_8.png/220px-Game_of_Thrones_Season_8.png" alt=""></a>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-8/"onclick="ext()">Season 8</a>
+                    </h4>
+                    <p class="card-text">The eighth and final season of the fantasy drama television series Game of Thrones, produced by HBO, premiered on April 14, 2019, and concluded on May 19, 2019. Unlike the first six seasons, which consisted of ten episodes each, and the seventh season, which consisted of seven episodes, the eighth season consists of only six episodes.
+
+                      The final season depicts the culmination of the series' two primary conflicts: the Great War against the Army of the Dead, and the Last War for control of the Iron Throne. The first half of the season involves many of the main characters converging at Winterfell with their armies in an effort to repel the Night King and his army of White Walkers and wights. The second half of the season resumes the war for the throne as Queen Daenerys Targaryen assaults King's Landing in an attempt to unseat Queen Cersei Lannister as the ruler of the Seven Kingdoms.</p>
+                    <button><a href="http://indexof.ir/series/game-of-throne/" onclick="ext()">Download</a></button>
+                    <button> <a href="https://watchgameofthrones.tv/seasons/game-of-thrones-season-8/" onclick="ext()">Watch</a></button>                  
+                  </div>
+                </div>
+              </div>
+        
+          
+            
+      
+        </div>
+        <!-- /.container -->
+      </section>
+    <section id="cast">
+      <header class="bg-secondary text-center py-5 mb-4">
+        <div class="container">
+          <h1 class="font-weight-light text-white">Meet the Cast</h1>
+        </div>
+      </header>
+      
+      <!-- Page Content -->
+      <div class="container">
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="http://www.gstatic.com/tv/thumb/persons/613075/613075_v9_bb.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Emilia Clarke</h5>
+                <div class="card-text text-black-50">Daenerys Targaryen</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="https://vignette.wikia.nocookie.net/gameofthrones/images/9/92/Maisie_Williams_2018.jpg/revision/latest?cb=20190513151042" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Maisie Williams</h5>
+                <div class="card-text text-black-50">Arya Stark</div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="http://www.gstatic.com/tv/thumb/persons/657231/657231_v9_bb.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Sophie Turner</h5>
+                <div class="card-text text-black-50">Dan Humphrey </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="http://www.gstatic.com/tv/thumb/persons/613076/613076_v9_ba.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Kit Harington</h5>
+                <div class="card-text text-black-50">Jon Snow</div>
+              </div>
+            </div>
+          </div>
+          </div>
+       
+        <!-- /.row -->
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="http://www.gstatic.com/tv/thumb/persons/299302/299302_v9_ba.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Peter Dinklage</h5>
+                <div class="card-text text-black-50">Tryion Lannister </div>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 1 -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="http://www.gstatic.com/tv/thumb/persons/73830/73830_v9_ba.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Lena Headey</h5>
+                <div class="card-text text-black-50">Cersei Lannister</div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+          
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy; Malavika's Recommendations</small>
+      </div>
+    </footer>
+ </body>
+ </html>
