@@ -1,8 +1,8 @@
-##So Welcome to My Final Capstone Project.
+## So Welcome to My Final Capstone Project.
 
 So just click on the link below to see my site.
 
-[I'm an inline-style link](https://www.google.com)
+## [Malavika's Recommendations](https://malavikarajeshvikraman.github.io/Malv-sRecommendations/index.html)
 
 The four Enchancements I have added:
  1. Sticky Footer
